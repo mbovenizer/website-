@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+*{
+    
+    
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: rgb(13, 137, 194);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+nav{
+    background: rgb(13, 137, 194);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background-color: rgb(13, 137, 194);
+    transition: .5s;
+}
+  
+.check-btn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+  
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+  
+@media (max-width: 858px){
+    .check-btn{
+      display: block;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      background-color: rgb(13, 137, 194);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+main > ul >li {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    
+}
+
+
+h2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#top_button {
+    position: fixed;
+    color:white;
+    bottom: 10px;
+ 
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px;
+    scroll-behavior: smooth;
+    left: 75%
+
+}
+
+#top_button:hover {
+    color:orange;
+}
+
+.nav_links>li>a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links >li >a:hover {
+    color:orange;
+
+}
+
+main > ul >li {
+    padding-left: 15px;
+    padding-right: 15em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgb(9, 83, 126);
+    color:white;
+}
+
+video {
+    max-width: 100%;
+    height: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
